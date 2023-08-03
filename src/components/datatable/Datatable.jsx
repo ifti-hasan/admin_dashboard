@@ -3,7 +3,7 @@ import { DataGrid } from '@mui/x-data-grid';
 import { userColumns, userRows } from "../../datatablesource";
 
 function Datatable() {
-   const actionColumn = [
+  const actionColumn = [
     {
       field:"action",
       headerName: "Action",
@@ -17,7 +17,8 @@ function Datatable() {
         );
       },
     },
-   ];
+    ];
+
   return (
     <div className="datatable">
         <DataGrid
