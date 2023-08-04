@@ -10,72 +10,88 @@ import HealthAndSafetyOutlinedIcon from '@mui/icons-material/HealthAndSafetyOutl
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import LogoutIcon from '@mui/icons-material/Logout';
+import { Link } from 'react-router-dom';
 
 function Sidebar() {
   return (
     <div className='sidebar'>
       <div className="top">
-        <span className='logo'>lamadmin</span>
+        <Link to="/"style={{textDecoration:"none"}}><span className='logo'>lamadmin</span></Link>        
       </div>
       <hr />
 
       <div className="center">
         <ul>
           <p className="title">MAIN</p>
+          <Link to="/dashboard"style={{textDecoration:"none"}}>
           <li>
             <DashboardIcon className='icon'/>
             <span>Dashboard</span>
           </li>
+          </Link>
 
           <p className="title">LISTS</p>
-
+          
+          <Link to="/users"style={{textDecoration:"none"}}>
           <li>
             <GroupIcon className='icon'/>
             <span>Users</span>
-          </li>
+          </li></Link>
 
+          <Link to="/products"style={{textDecoration:"none"}}>
           <li>
             <InventoryIcon className='icon'/>
             <span>Products</span>
-          </li>
+          </li></Link>
+          <Link to="/dashboard"style={{textDecoration:"none"}}>
           <li>
             <BorderColorOutlinedIcon className='icon'/>
             <span>Orders</span>
-          </li>
+          </li></Link>
+          <Link to="/dashboard"style={{textDecoration:"none"}}>
           <li>
             <LocalShippingOutlinedIcon className='icon'/>
             <span>Delivery</span>
-          </li>
+          </li></Link>
           <p className="title">USEFUL</p>
 
+          <Link to="/dashboard"style={{textDecoration:"none"}}>
           <li>
             <QueryStatsOutlinedIcon className='icon'/>
             <span>Stats</span>
-          </li>
+          </li></Link>
+          <Link to="/dashboard"style={{textDecoration:"none"}}>
           <li>
             <NotificationsNoneOutlinedIcon className='icon'/>
             <span>Notifications</span>
-          </li>
+          </li></Link>
+
           <p className="title">SERVICES</p>
 
+          <Link to="/dashboard"style={{textDecoration:"none"}}>
           <li>
             <HealthAndSafetyOutlinedIcon className='icon'/>
             <span>System Health</span>
-          </li>
+          </li></Link>
+
+          <Link to="/dashboard"style={{textDecoration:"none"}}>
           <li>
             <SettingsOutlinedIcon className='icon'/>
             <span>Settings</span>
-          </li>
+          </li></Link>
           <p className="title">USER</p>
 
+          <Link to="/dashboard"style={{textDecoration:"none"}}>
           <li>
             <AccountBoxIcon className='icon'/>
             <span>Profile</span>
-          </li>
+          </li></Link>
+
+          <Link to="/dashboard"style={{textDecoration:"none"}}>
           <li>
             <LogoutIcon className='icon'/>
             <span>Logout</span>
-          </li>
+          </li></Link>
 
         </ul>
       </div>
