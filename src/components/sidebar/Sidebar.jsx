@@ -26,12 +26,10 @@ function Sidebar() {
       <div className="center">
         <ul>
           <p className="title">MAIN</p>
-          <Link to="/dashboard"style={{textDecoration:"none"}}>
           <li>
             <DashboardIcon className='icon'/>
             <span>Dashboard</span>
           </li>
-          </Link>
 
           <p className="title">LISTS</p>
           
@@ -46,55 +44,47 @@ function Sidebar() {
             <InventoryIcon className='icon'/>
             <span>Products</span>
           </li></Link>
-          <Link to="/dashboard"style={{textDecoration:"none"}}>
           <li>
             <BorderColorOutlinedIcon className='icon'/>
             <span>Orders</span>
-          </li></Link>
-          <Link to="/dashboard"style={{textDecoration:"none"}}>
+          </li>
           <li>
             <LocalShippingOutlinedIcon className='icon'/>
             <span>Delivery</span>
-          </li></Link>
+          </li>
           <p className="title">USEFUL</p>
 
-          <Link to="/dashboard"style={{textDecoration:"none"}}>
           <li>
             <QueryStatsOutlinedIcon className='icon'/>
             <span>Stats</span>
-          </li></Link>
-          <Link to="/dashboard"style={{textDecoration:"none"}}>
+          </li>
           <li>
             <NotificationsNoneOutlinedIcon className='icon'/>
             <span>Notifications</span>
-          </li></Link>
-
+          </li>
           <p className="title">SERVICES</p>
 
-          <Link to="/dashboard"style={{textDecoration:"none"}}>
           <li>
             <HealthAndSafetyOutlinedIcon className='icon'/>
             <span>System Health</span>
-          </li></Link>
+          </li>
 
-          <Link to="/dashboard"style={{textDecoration:"none"}}>
           <li>
             <SettingsOutlinedIcon className='icon'/>
             <span>Settings</span>
-          </li></Link>
+          </li>
           <p className="title">USER</p>
 
-          <Link to="/dashboard"style={{textDecoration:"none"}}>
           <li>
             <AccountBoxIcon className='icon'/>
             <span>Profile</span>
-          </li></Link>
+          </li>
+          {/* </Link> */}
 
-          <Link to="/dashboard"style={{textDecoration:"none"}}>
           <li>
             <LogoutIcon className='icon'/>
             <span>Logout</span>
-          </li></Link>
+          </li>
 
         </ul>
       </div>
